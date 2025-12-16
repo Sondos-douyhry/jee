@@ -13,6 +13,5 @@ spring:
       ddl-auto: update
     show-sql: true
 
-# CONFIGURATION OBLIGATOIRE DU PROJET
 mes-config-ms:
   commandes-last: 10

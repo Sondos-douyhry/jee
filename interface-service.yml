@@ -1,5 +1,9 @@
-server.port=8083
+server:
+  port: 8083
 
-spring.application.name=interface-service
+spring:
+  application:
+    name: interface-service
 
-mes-config-ms.commandes-last=10
+mes-config-ms:
+  commandes-last: 10
