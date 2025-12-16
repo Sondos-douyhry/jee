@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: commande-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/commande_db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# CONFIGURATION OBLIGATOIRE DU PROJET
+mes-config-ms:
+  commandes-last: 10

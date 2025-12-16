@@ -1,0 +1,10 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: interface-service
+
+# Configuration pour récupérer la valeur depuis commande-service
+mes-config-ms:
+  commandes-last: 10
