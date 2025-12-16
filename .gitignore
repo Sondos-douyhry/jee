@@ -1,0 +1,23 @@
+**/target/
+**/*.class
+
+# Maven
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
+
+# IDE
+**/.idea/
+**/*.iml
+**/.vscode/
+**/.settings/
+**/.project
+**/.classpath
+
+# Logs
+**/logs/
+**/*.log
+
+# OS
+**/.DS_Store
+**/Thumbs.db
