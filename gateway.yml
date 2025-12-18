@@ -3,10 +3,33 @@ server:
 
 spring:
   application:
-    name: gateway
+    name: gateway-service
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
+      routes:
+        # Route pour Interface Service
+        - id: interface-service
+          uri: lb://interface-service
+          predicates:
+            - Path=/api/**
+
+        # Routes pour Restaurant Service
+        - id: restaurant-service
+          uri: lb://restaurant-service
+          predicates:
+            - Path=/restaurants/**,/plats/**
+
+        # Routes pour Commande Service
+        - id: commande-service
+          uri: lb://commande-service
+          predicates:
+            - Path=/commandes/**,/livreurs/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
